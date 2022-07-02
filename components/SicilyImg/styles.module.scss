@@ -1,0 +1,21 @@
+.sicilyContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // background-color: rgb(224, 224, 224);
+
+    p{
+        margin:4rem 0 1rem 0;
+    }
+    .imgContain{
+        display: flex;
+        justify-content: center;
+        min-width: 400px;
+        max-width: 80%;
+        
+        
+        
+        
+    }
+}
