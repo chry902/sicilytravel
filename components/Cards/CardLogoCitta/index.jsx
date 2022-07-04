@@ -5,7 +5,7 @@ import logoPalermo from "../../Images/logoPalermo.png";
 const LogoCitta = () => {
   return (
     <div>
-      <Image src={logoPalermo} width={100} height={100} />
+      <Image src={logoPalermo} width={100} height={100} alt={"logo"} />
     </div>
   );
 };

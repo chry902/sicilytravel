@@ -1,18 +1,40 @@
-.container{
-    padding:0 8rem;
 
+.container{
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    padding:0 8rem;
+    background-color: rgb(255, 252, 242);
     header{
         text-align: center;
     }
     main{
-        :nth-child(3){
-            justify-content: space-between;
-        }
+        
      .componentWrapper{
-        margin-top: 4rem;
+        margin-top: 1rem;
         display: flex;
-
+        justify-content: center;
     
      }
+     :nth-child(3),
+        :nth-child(4){
+            justify-content: space-between;
+        }
     }
 }
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .container{
+        padding: 10px;
+    }
+    
+}
+
