@@ -751,17 +751,15 @@ export const UserLocationContext = () => useContext(LocationContext);
 export default ({ children }) => {
   const [state, dispatch] = useReducer(locationReducer, initialState);
 
-  //   const fetchAll = async (par) => {
-  //     dispatch({ type: FETCH_ALL_LOCATION_REQUEST });
-  //     try {
-  //       const { data: vacation } = await axios.get(
-  //         `https://sandbox.musement.com/api/v3${par}`
-  //       );
-  //       dispatch({ type: FETCH_ALL_LOCATION_SUCCESS, payload: location });
-  //     } catch (e) {
-  //       dispatch({ type: FETCH_ALL_LOCATION_ERROR, payload: e });
-  //     }
-  //   };
+  const fetchAll = async (par) => {
+    dispatch({ type: FETCH_ALL_LOCATION_REQUEST });
+    try {
+      const { data: vacation } = await axios.get(`...`);
+      dispatch({ type: FETCH_ALL_LOCATION_SUCCESS, payload: location });
+    } catch (e) {
+      dispatch({ type: FETCH_ALL_LOCATION_ERROR, payload: e });
+    }
+  };
 
   return (
     <LocationContext.Provider value={state}>
