@@ -760,9 +760,10 @@ export default ({ children }) => {
       dispatch({ type: FETCH_ALL_LOCATION_ERROR, payload: e });
     }
   };
+  const value = { state, fetchAll };
 
   return (
-    <LocationContext.Provider value={state}>
+    <LocationContext.Provider value={value}>
       {children}
     </LocationContext.Provider>
   );

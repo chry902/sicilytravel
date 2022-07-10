@@ -10,18 +10,20 @@ import Image from "next/image";
 const Gallery = () => {
   const id = useId();
 
-  const location = UserLocationContext();
+  const {
+    state: { location },
+  } = UserLocationContext();
   const [arrImge, setArrImge] = useState([]);
-
+  console.log("location", location);
   const items = [];
 
   useEffect(() => {
     const arrImg = [];
     arrImg = [
       ...arrImg,
-      ...location.location[0].image,
-      ...location.location[1].image,
-      ...location.location[2].image,
+      ...location[0].image,
+      ...location[1].image,
+      ...location[2].image,
     ];
     setArrImge(arrImg);
   }, [location]);

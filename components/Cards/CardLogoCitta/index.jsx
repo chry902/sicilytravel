@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const LogoCitta = () => {
   const id = useId();
   const stato = UserLocationContext();
-  console.log(stato.location[0].logo);
+
   useEffect(() => {}, []);
 
   return (
