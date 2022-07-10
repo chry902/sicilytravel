@@ -746,7 +746,7 @@ const initialState = {
 console.log(initialState.location);
 const locationContext = createContext(initialState);
 
-export const userLocationContext = () => useContext(locationContext);
+export const UserLocationContext = () => useContext(locationContext);
 
 export default ({ children }) => {
   const [state, dispatch] = useReducer(locationReducer, initialState);

@@ -3,14 +3,14 @@ import styles from "./styles.module.scss";
 import { useState, useEffect } from "react";
 import AliceCarousel from "react-alice-carousel";
 import useId from "react-use-uuid";
-import { userLocationContext } from "../context/Context";
+import { UserLocationContext } from "../context/Context";
 
 import Image from "next/image";
 
 const Gallery = () => {
   const id = useId();
-  console.log(id);
-  const location = userLocationContext();
+
+  const location = UserLocationContext();
   const [arrImge, setArrImge] = useState([]);
 
   const items = [];

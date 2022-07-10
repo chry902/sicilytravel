@@ -46,7 +46,7 @@ const SicilyLogo = () => {
           </p>
         </div>
         <div className={styles.imgContain}>
-          <Image src={SicilyImg} />
+          <Image src={SicilyImg} alt="immagine sicilia" />
         </div>
       </div>
     </>
