@@ -4,7 +4,7 @@ import {
   FETCH_ALL_LOCATION_ERROR,
 } from "./constant";
 
-export default (state, action) => {
+export default (state = {}, action) => {
   switch (action.type) {
     case FETCH_ALL_LOCATION_REQUEST:
       return {
