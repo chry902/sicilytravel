@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer } from "react";
-// import axios from "axios";
+import axios from "axios";
 export const myContext = createContext("");
 import locationReducer from "./locationReducer";
 
