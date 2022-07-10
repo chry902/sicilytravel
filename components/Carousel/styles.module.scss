@@ -1,9 +1,32 @@
-
-.imgContain{
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+.imgContainer{
     width: 100%;
-    img{
-        width: 100%;
-        object-fit: contain;
-    }
+   li{
+    margin:0 3px;
+   }
 
+        img{
+         border-radius: 15px;
+         margin:0 3px
+        }
+
+    
+
+}
+
+@media screen and (max-width: 375px) {
+    .imgContainer{
+        width: 100%;
+       li{
+       margin: 0;
+       }
+    
+            img{
+             border-radius: 15px;
+             
+            }
+    
+        
+    
+    }
 }

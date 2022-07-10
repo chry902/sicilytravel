@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
 .container{
     *{
         padding: 0;
@@ -9,11 +9,14 @@
     background-color: rgb(255, 252, 242);
     header{
         text-align: center;
+        h1{
+            font-size: 80px;
+        }
     }
     main{
         
      .componentWrapper{
-        margin-top: 1rem;
+        margin: 3rem 0;
         display: flex;
         justify-content: center;
     
@@ -24,9 +27,39 @@
         }
     }
 }
+@media screen and (max-width: 897px) {
+    .container{
+        
+        header{
+            
+            h1{
+                font-size: 60px;
+            }
+        }
+    }
+    
+}
 @media screen and (max-width: 768px) {
     .container{
         padding: 3rem;
+        header{
+            text-align: center;
+            h1{
+                font-size: 60px;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 575px) {
+    .container{
+         
+        header{
+            
+            h1{
+                font-size: 40px;
+            }
+        }
     }
     
 }
@@ -34,6 +67,12 @@
 @media screen and (max-width: 425px) {
     .container{
         padding: 10px;
+        header{
+            text-align: center;
+            h1{
+                font-size: 40px;
+            }
+        }
     }
     
 }

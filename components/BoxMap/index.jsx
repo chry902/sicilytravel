@@ -21,7 +21,7 @@ const Map = ({ lng, lat, zoom }) => {
       attributionControl: false,
       projection: "globe",
     });
-    console.log(zoomScreen);
+
     // Marker map
     const marker = new mapboxgl.Marker({
       color: "brown",
@@ -33,7 +33,7 @@ const Map = ({ lng, lat, zoom }) => {
 
     // Map controls (zoom in / out)
     map.addControl(new mapboxgl.NavigationControl(), "top-right");
-  }, [lng, zoom]);
+  }, [longitute, latitude, zoomScreen]);
 
   return (
     <>
