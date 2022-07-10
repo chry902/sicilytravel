@@ -7,13 +7,13 @@ import { useEffect } from "react";
 
 const LogoCitta = () => {
   const id = useId();
-  const state = userLocationContext();
-  console.log(state.location[0].logo);
+  const stato = userLocationContext();
+  console.log(stato.location[0].logo);
   useEffect(() => {}, []);
 
   return (
     <div className={styles.logoContain}>
-      {state.location?.map((item, index) => (
+      {stato.location?.map((item, index) => (
         <div key={index.id}>
           <Image src={item.logo} width={200} height={200} alt={"logo"} />
         </div>
