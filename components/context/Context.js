@@ -744,9 +744,9 @@ const initialState = {
   ],
 };
 console.log(initialState.location);
-const locationContext = createContext(initialState);
+const LocationContext = createContext(initialState);
 
-export const UserLocationContext = () => useContext(locationContext);
+export const UserLocationContext = () => useContext(LocationContext);
 
 export default ({ children }) => {
   const [state, dispatch] = useReducer(locationReducer, initialState);
@@ -764,8 +764,8 @@ export default ({ children }) => {
   //   };
 
   return (
-    <locationContext.Provider value={state}>
+    <LocationContext.Provider value={state}>
       {children}
-    </locationContext.Provider>
+    </LocationContext.Provider>
   );
 };
