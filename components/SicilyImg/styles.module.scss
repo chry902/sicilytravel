@@ -36,11 +36,12 @@
     .sicilyContainer{
         .paragraphContaine{
             justify-content: center;
-            flex-wrap: nowrap;
+            justify-content: center;
+            flex-wrap: wrap;
        
             p{
                 width: 100%;
-                font-size: small;
+                
             }
         }
 

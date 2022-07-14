@@ -16,7 +16,8 @@
                 margin-top: 3rem ;
                 h1{
                     padding:0 20px;
-                    font-size: 80px;
+                    // font-size: 80px;
+                    white-space: nowrap;
                 }
 
             }
@@ -41,9 +42,27 @@
         }
     
 }
+@media screen and (max-width: 3560px) {
+    .container{
+    
+            h1{
+                font-size: 80px;
+            }    
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    .container{
+        padding: 6rem;
+            h1{
+                font-size: 80px;
+            }    
+    }
+    
+}
 @media screen and (max-width: 897px) {
     .container{
-        
+        padding: 3rem;
         
         div{
             h1{
@@ -62,6 +81,7 @@
         div{
             h1{
                 font-size: 60px;
+                color: url(../components/Images/imageBackground.jpeg);
             }
         }
         
