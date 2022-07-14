@@ -6,6 +6,9 @@ const SicilyLogo = () => {
   return (
     <>
       <div className={styles.sicilyContainer}>
+        <div className={styles.imgContain}>
+          <Image src={SicilyImg} alt="immagine sicilia" />
+        </div>
         <div className={styles.paragraphContaine}>
           <p>
             Suli a livanti, suli a punenti, <br /> terra vasata di tutti li
@@ -44,9 +47,6 @@ const SicilyLogo = () => {
             <br /> Forsi ci sará un postu chi la rassumigghia,
             <br /> ma sulu a Sicilia é sta gran meravigghia!
           </p>
-        </div>
-        <div className={styles.imgContain}>
-          <Image src={SicilyImg} alt="immagine sicilia" />
         </div>
       </div>
     </>

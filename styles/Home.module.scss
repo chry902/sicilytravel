@@ -3,35 +3,27 @@
     background-image: url(../components/Images/imageBackground.jpeg);
     
     background-color: rgba(255, 250, 240, 0.431);
-    padding:0 10rem;
+    padding:2rem 10rem;
     
-        header{
-            
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            div{
-                background-color: white;
-                border-radius: 15px;
-                margin-top: 3rem ;
-                h1{
-                    padding:0 20px;
-                    // font-size: 80px;
-                    white-space: nowrap;
-                }
-
-            }
-        }
-
         main{
             background-color: rgb(255, 255, 255);
-           
             border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
+            border-top-right-radius: 15px;
+                div{
+                    background-color: white;
+                    border-radius: 15px;
+                    text-align: center;
+                    h1{
+                        padding:0 20px;
+                        // font-size: 80px;
+                        white-space: nowrap;
+                    }
+    
+                }
             .componentWrapper{
                 display: flex;
                 justify-content: center;
-                margin-top: 3rem ;
+                margin-bottom: 3rem ;
                 padding: 1rem;
             }
             
