@@ -48,8 +48,8 @@ const Gallery = () => {
             src={element}
             onDragStart={handleDragStart}
             role="presentation"
-            width={400}
-            height={300}
+            width={650}
+            height={450}
             key={id}
           />
         </div>
