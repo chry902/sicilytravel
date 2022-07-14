@@ -17,7 +17,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <h1 className={styles.title}>Gira vota e furria</h1>
+        <div>
+          <h1 className={styles.title}>Gira vota e furria</h1>
+        </div>
       </header>
       <main>
         <section className={styles.componentWrapper}>
