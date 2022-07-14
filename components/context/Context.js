@@ -748,7 +748,7 @@ const LocationContext = createContext(initialState);
 
 export const UserLocationContext = () => useContext(LocationContext);
 
-export default ({ children }) => {
+const LocationContextDispatch = ({ children }) => {
   const [state, dispatch] = useReducer(locationReducer, initialState);
 
   const fetchAll = async (par) => {
@@ -768,3 +768,4 @@ export default ({ children }) => {
     </LocationContext.Provider>
   );
 };
+export default LocationContextDispatch;
