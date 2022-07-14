@@ -1,6 +1,16 @@
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
 .imgContainer{
     width: 100%;
+   
+    
+    border-radius: 15px;
+    
+    div{
+        border-radius: 15px;
+        // box-shadow: 5px 10px 3px 1px rgba(196, 196, 196, 0.195);
+    }
+    
    li{
     margin:0 2.5px;
    }
@@ -12,6 +22,9 @@
 
     
 
+}
+.alice-carousel__wrapper{
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 375px) {

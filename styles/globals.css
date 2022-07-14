@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Signika:wght@500&display=swap');
 html,
 * {
   padding: 0;
@@ -12,11 +12,18 @@ body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Signika', sans-serif;
+  color: rgb(255, 164, 45);
+
+
+}
+p{
+  color: rgb(255, 133, 11);
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
 
