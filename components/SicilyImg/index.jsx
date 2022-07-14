@@ -11,11 +11,11 @@ const SicilyLogo = () => {
             Suli a livanti, suli a punenti, <br /> terra vasata di tutti li
             venti,
             <br />
-            accarizzata di l&aposazzurru mari,
+            accarizzata di l&apos;azzurru mari,
             <br />
             terra di gioie e di lacrimi amari.
             <br />
-            Terra di suli, d&aposamuri e d&aposincantu, <br />
+            Terra di suli, d&apos;amuri e d&apos;incantu, <br />
             terra di spartenzi,di duluri e di chiantu.
             <br />
             Terra chi cunfunni e la menti scumpigghia,
@@ -32,14 +32,14 @@ const SicilyLogo = () => {
 
           <p>
             Terra di genti chi la lassa scuntenti,
-            <br /> e giá mentri parti di turnari é &aposmpazienti. <br />
+            <br /> e giá mentri parti di turnari é &apos;mpazienti. <br />
             Terra di fimmini beddi comu li ciuri,
-            <br /> chi ogni picciottu fannu &aposmpazziri d&aposamuri, <br />
-            comu Dee di l&aposOlimpu, eleganti e abbronzati, <br />
-            cu l&aposocchi só scuri e li só corpi dorati.
-            <br /> Terra di l&aposantichi Greci e di li só Dei, <br />
+            <br /> chi ogni picciottu fannu &apos;mpazziri d&apos;amuri, <br />
+            comu Dee di l&apos;Olimpu, eleganti e abbronzati, <br />
+            cu l&apos;occhi só scuri e li só corpi dorati.
+            <br /> Terra di l&apos;antichi Greci e di li só Dei, <br />
             oggi ricurdati da li templi e i musei.
-            <br /> Ogni petra di sta terra é un opira d&aposarti,
+            <br /> Ogni petra di sta terra é un opira d&apos;arti,
             <br /> e lassalla é un duluri pi ognirunu ca parti.
             <br /> Forsi ci sará un postu chi la rassumigghia,
             <br /> ma sulu a Sicilia é sta gran meravigghia!

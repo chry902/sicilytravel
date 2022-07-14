@@ -6,7 +6,7 @@ import useId from "react-use-uuid";
 import { UserLocationContext } from "../context/Context";
 
 import Image from "next/image";
-
+const items = [];
 const Gallery = () => {
   const id = useId();
 
@@ -15,7 +15,6 @@ const Gallery = () => {
   } = UserLocationContext();
   const [arrImge, setArrImge] = useState([]);
   console.log("location", location);
-  const items = [];
 
   useEffect(() => {
     const arrImg = [];
@@ -64,13 +63,13 @@ const Gallery = () => {
       <AliceCarousel
         mouseTracking={true}
         autoPlay={true}
-        autoPlayInterval={2500}
+        autoPlayInterval={2000}
         responsive={responsive}
         infinite={true}
         disableButtonsControls={true}
         disableDotsControls={true}
         // autoHeight={true}
-        controlsStrategy="alternate"
+        // controlsStrategy="alternate"
         items={items}
       />
     </div>
