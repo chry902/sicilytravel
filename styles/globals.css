@@ -16,7 +16,10 @@ body {
 
 
 }
-
+h2{
+  font-size: 45px;
+  font-weight:900;
+}
 
 a {
   color: inherit;

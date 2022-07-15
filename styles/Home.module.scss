@@ -14,9 +14,12 @@
                     border-radius: 15px;
                     text-align: center;
                     h1{
-                        padding:0 20px;
-                        // font-size: 80px;
+                        padding:3rem 20px 0 20px;
                         white-space: nowrap;
+                        color: #0000001a;
+                        background-clip:text;
+  
+                        background-image: url("../components/Images/sfondoH1.jpeg"); 
                     }
     
                 }
@@ -38,7 +41,16 @@
     .container{
     
             h1{
-                font-size: 80px;
+                font-size: 120px;
+            }    
+    }
+    
+}
+@media screen and (max-width: 1440px) {
+    .container{
+        padding: 6rem;
+            h1{
+                font-size: 90px;
             }    
     }
     
@@ -58,7 +70,7 @@
         
         div{
             h1{
-                font-size: 60px;
+                font-size: 80px;
             }
         }
         

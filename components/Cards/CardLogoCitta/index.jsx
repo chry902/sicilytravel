@@ -6,17 +6,24 @@ import { UserLocationContext } from "../../context/Context";
 import { useEffect } from "react";
 
 const LogoCitta = () => {
-  const stato = UserLocationContext();
-  console.log(stato.state.location);
+  const {
+    state: { location },
+  } = UserLocationContext();
+  console.log("location", location);
   useEffect(() => {}, []);
 
   return (
     <div className={styles.logoContain}>
-      {stato.state.location?.map((item, index) => (
-        <div key={index.id}>
-          <Image src={item.logo} width={200} height={200} alt={"logo"} />
-        </div>
-      ))}
+      <div>
+        <h2>Dimmi dove sei e ti dirò dove andare </h2>
+      </div>
+      <div className={styles.logoWrapper}>
+        {location?.map((item, i) => (
+          <div key={i}>
+            <Image src={item.logo} width={200} height={200} alt={"logo"} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,4 +1,16 @@
+
 .logoContain{
-    display: flex;
-    
+    width: 100%;
+    h2{
+        margin-bottom: 3rem;
+        color: #0000001a;
+        background-clip:text;
+        -webkit-background-clip:text;
+        background-image: url("../../Images/sfondoH2.jpeg"); 
+    }
+    .logoWrapper{
+        display: flex;
+        
+        
+    }
 }

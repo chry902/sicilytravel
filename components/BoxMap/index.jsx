@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import styles from "./styles.module.scss";
-import Head from "next/head";
+
 import mapboxgl from "mapbox-gl";
 
 const Map = ({ lng, lat, zoom }) => {
@@ -32,21 +32,10 @@ const Map = ({ lng, lat, zoom }) => {
       .addTo(map);
 
     // Map controls (zoom in / out)
-    map.addControl(new mapboxgl.NavigationControl(), "top-right");
+    map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
   }, [longitute, latitude, zoomScreen]);
 
-  return (
-    <>
-      <Head>
-        <link
-          href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"
-          rel="stylesheet"
-        />
-      </Head>
-
-      <div id="mapContainer" className={styles.map}></div>
-    </>
-  );
+  return <div id="mapContainer" className={styles.map}></div>;
 };
 
 export default Map;

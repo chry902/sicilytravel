@@ -14,7 +14,6 @@ const Gallery = () => {
     state: { location },
   } = UserLocationContext();
   const [arrImge, setArrImge] = useState([]);
-  console.log("location", location);
 
   useEffect(() => {
     const arrImg = [];
@@ -26,7 +25,6 @@ const Gallery = () => {
     ];
     setArrImge(arrImg);
   }, [location]);
-  console.log("===>", arrImge);
 
   const handleDragStart = (e) => e.preventDefault();
 
@@ -55,7 +53,6 @@ const Gallery = () => {
         </div>
       );
     });
-    console.log("foreach", items);
   }, [arrImge]);
 
   return (
