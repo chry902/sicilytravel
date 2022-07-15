@@ -7,6 +7,7 @@ import SicilyLogo from "../components/SicilyImg";
 import Carousel from "../components/Carousel";
 import LogoCitta from "../components/Cards/CardLogoCitta";
 import Map from "../components/BoxMap";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -22,9 +23,17 @@ export default function Home() {
       </Head>
 
       <main>
-        <div>
+        <div className={styles.titleContain}>
           <h1 className={styles.title}>Gira, vota e furria</h1>
+          <div className={styles.logoTitle}>
+            <img
+              src={
+                "https://m.media-amazon.com/images/I/91fCK5XIrqL._AC_UL320_.jpg"
+              }
+            />
+          </div>
         </div>
+
         <section className={styles.componentWrapper}>
           <SicilyLogo />
         </section>

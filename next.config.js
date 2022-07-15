@@ -12,6 +12,7 @@ const nextConfig = {
       "c0.wallpaperflare.com",
       "c4.wallpaperflare.com",
       "c1.wallpaperflare.com",
+      "m.media-amazon.com",
     ],
   },
 };

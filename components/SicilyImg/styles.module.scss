@@ -9,8 +9,6 @@
     .paragraphContaine{
         width: 100%;
         display: flex;
-        gap: 40px;
-        
         justify-content: space-evenly;
         align-items:flex-end;
         margin:2rem 0 1rem 0;
@@ -41,7 +39,7 @@
        
             p{
                 width: 100%;
-                
+                font-size:inherit;
             }
         }
 
@@ -60,14 +58,4 @@
         }
 
     }
-}
-@media screen and (min-width: 768px) {
-    .sicilyContainer{
-        .paragraphContaine{
-            flex-wrap: nowrap;
-       
-        }
-
-    }
-    
 }

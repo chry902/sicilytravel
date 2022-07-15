@@ -1,16 +1,20 @@
 
 .logoContain{
     width: 100%;
+   div{
+    width: 100%;
+    text-align: center;
     h2{
         margin-bottom: 3rem;
-        color: #0000001a;
-        background-clip:text;
-        -webkit-background-clip:text;
-        background-image: url("../../Images/sfondoH2.jpeg"); 
+       
+       
     }
+   }
     .logoWrapper{
         display: flex;
         
-        
+        h3{
+            color:rgb(216,39,31);
+        }
     }
 }

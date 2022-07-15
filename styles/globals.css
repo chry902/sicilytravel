@@ -18,7 +18,13 @@ body {
 }
 h2{
   font-size: 45px;
-  font-weight:900;
+  font-weight: bold;
+  color:rgb(47,93,171);
+}
+p{
+  font-weight: bold;
+  color:rgb(47,93,171);
+  font-size: 20px;
 }
 
 a {
