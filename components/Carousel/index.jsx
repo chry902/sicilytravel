@@ -6,7 +6,7 @@ import AliceCarousel from "react-alice-carousel";
 import Link from "next/link";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const items = [];
 
