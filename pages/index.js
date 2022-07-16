@@ -8,7 +8,7 @@ import Carousel from "../components/Carousel";
 import LogoCitta from "../components/Cards/CardLogoCitta";
 import Map from "../components/BoxMap";
 import logoruota from "../components/Images/ruota.png";
-
+import { useState } from "react";
 import { UserLocationContext } from "../components/context/Context";
 export default function Home() {
   const [item, setItem] = useState([]);
