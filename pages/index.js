@@ -44,7 +44,7 @@ export default function Home() {
         </section>
 
         <section className={styles.componentWrapper}>
-          <Carousel location={location} />
+          <Carousel />
         </section>
 
         <section className={styles.componentWrapper}>
