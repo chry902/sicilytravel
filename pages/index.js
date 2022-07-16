@@ -11,7 +11,7 @@ import logoruota from "../components/Images/ruota.png";
 
 import { UserLocationContext } from "../components/context/Context";
 export default function Home() {
-  const [item, setItem] = useState("");
+  const [item, setItem] = useState([]);
   const {
     state: { location },
   } = UserLocationContext();
