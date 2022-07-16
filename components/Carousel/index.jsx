@@ -11,7 +11,6 @@ import { useEffect, useState } from "react";
 const items = [];
 
 const Gallery = ({ location }) => {
-  const [item, setItem] = useState(location);
   useEffect(() => {
     location.forEach((element, index) => {
       items.push(
@@ -30,7 +29,7 @@ const Gallery = ({ location }) => {
         </Link>
       );
     });
-  }, [item]);
+  }, [location]);
 
   const responsive = {
     0: { items: 1 },
