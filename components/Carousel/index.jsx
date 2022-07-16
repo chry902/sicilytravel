@@ -8,14 +8,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
 
-import useId from "react-use-uuid";
-
 const items = [];
 const Gallery = ({ location }) => {
-  const id = useId();
-
   useEffect(() => {
-    location.forEach((element) => {
+    location.forEach((element, index) => {
       items.push(
         <Link href={`/country/${element.city || ""}`}>
           <div>
@@ -26,7 +22,7 @@ const Gallery = ({ location }) => {
               role="presentation"
               width={750}
               height={560}
-              key={id}
+              key={index}
             />
           </div>
         </Link>
