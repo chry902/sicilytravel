@@ -4,7 +4,7 @@ import {
   FETCH_ALL_LOCATION_ERROR,
 } from "./constant";
 
-export const locationReducer = (state = {}, action) => {
+const locationReducer = (state = {}, action) => {
   switch (action.type) {
     case FETCH_ALL_LOCATION_REQUEST:
       return {
@@ -25,3 +25,4 @@ export const locationReducer = (state = {}, action) => {
       };
   }
 };
+export default locationReducer;
