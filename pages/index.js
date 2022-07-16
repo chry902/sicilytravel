@@ -2,14 +2,19 @@
 import styles from "../styles/Home.module.scss";
 import "react-alice-carousel/lib/alice-carousel.css";
 import Head from "next/head";
-
+import Image from "next/image";
 import SicilyLogo from "../components/SicilyImg";
 import Carousel from "../components/Carousel";
 import LogoCitta from "../components/Cards/CardLogoCitta";
 import Map from "../components/BoxMap";
-import Image from "next/image";
+import logoruota from "../components/Images/ruota.png";
 
+import { UserLocationContext } from "../components/context/Context";
 export default function Home() {
+  const {
+    state: { location },
+  } = UserLocationContext();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -23,13 +28,16 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className={styles.titleContain}>
-          <h1 className={styles.title}>Gira, vota e furria</h1>
-          <div className={styles.logoTitle}>
-            <img
-              src={
-                "https://m.media-amazon.com/images/I/91fCK5XIrqL._AC_UL320_.jpg"
-              }
+        <div className={styles.header}>
+          <div className={styles.titleContanere}>
+            <h1 className={styles.title}>Gira, vota e furria</h1>
+          </div>
+          <div className={styles.logoContain}>
+            <Image
+              src={logoruota}
+              alt="logo ruota carro"
+              width={500}
+              height={500}
             />
           </div>
         </div>
@@ -39,7 +47,7 @@ export default function Home() {
         </section>
 
         <section className={styles.componentWrapper}>
-          <Carousel />
+          <Carousel location={location} />
         </section>
 
         <section className={styles.componentWrapper}>

@@ -1,32 +1,38 @@
 import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "./styles.module.scss";
-import { useState, useEffect } from "react";
+
 import AliceCarousel from "react-alice-carousel";
-import useId from "react-use-uuid";
-import { UserLocationContext } from "../context/Context";
+
+import Link from "next/link";
 
 import Image from "next/image";
+import { useEffect } from "react";
+
+import useId from "react-use-uuid";
+
 const items = [];
-const Gallery = () => {
+const Gallery = ({ location }) => {
   const id = useId();
 
-  const {
-    state: { location },
-  } = UserLocationContext();
-  const [arrImge, setArrImge] = useState([]);
-
   useEffect(() => {
-    const arrImg = [];
-    arrImg = [
-      ...arrImg,
-      ...location[0].image,
-      ...location[1].image,
-      ...location[2].image,
-    ];
-    setArrImge(arrImg);
+    location.forEach((element) => {
+      items.push(
+        <Link href={`/country/${element.city || ""}`}>
+          <div>
+            <Image
+              alt="location images"
+              src={element.image[0]}
+              onDragStart={handleDragStart}
+              role="presentation"
+              width={750}
+              height={560}
+              key={id}
+            />
+          </div>
+        </Link>
+      );
+    });
   }, [location]);
-
-  const handleDragStart = (e) => e.preventDefault();
 
   const responsive = {
     0: { items: 1 },
@@ -36,25 +42,7 @@ const Gallery = () => {
     1439: { items: 5 },
     2559: { items: 6 },
   };
-
-  useEffect(() => {
-    arrImge.forEach((element) => {
-      items.push(
-        <div>
-          <Image
-            alt="location images"
-            src={element}
-            onDragStart={handleDragStart}
-            role="presentation"
-            width={750}
-            height={560}
-            key={id}
-          />
-        </div>
-      );
-    });
-  }, [arrImge]);
-
+  const handleDragStart = (e) => e.preventDefault();
   return (
     <div className={styles.imgContainer}>
       <AliceCarousel
