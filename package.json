@@ -17,7 +17,6 @@
     "react-alice-carousel": "^2.6.1",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "react-use-uuid": "^2.0.1",
     "sass": "^1.53.0"
   },
   "devDependencies": {

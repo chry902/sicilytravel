@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-// import useId from "react-use-uuid";
+
 import Image from "next/image";
 
 import { UserLocationContext } from "../../context/Context";
