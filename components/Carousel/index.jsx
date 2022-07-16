@@ -7,10 +7,13 @@ import Link from "next/link";
 
 import Image from "next/image";
 import { useEffect } from "react";
-
+import { UserLocationContext } from "../components/context/Context";
 const items = [];
 
-const Gallery = ({ location }) => {
+const Gallery = () => {
+  const {
+    state: { location },
+  } = UserLocationContext();
   useEffect(() => {
     location.forEach((element, index) => {
       items.push(

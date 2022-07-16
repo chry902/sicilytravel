@@ -9,12 +9,8 @@ import LogoCitta from "../components/Cards/CardLogoCitta";
 import Map from "../components/BoxMap";
 import logoruota from "../components/Images/ruota.png";
 import { useState } from "react";
-import { UserLocationContext } from "../components/context/Context";
-export default function Home() {
-  const {
-    state: { location },
-  } = UserLocationContext();
 
+export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
