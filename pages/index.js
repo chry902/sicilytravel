@@ -11,11 +11,9 @@ import logoruota from "../components/Images/ruota.png";
 import { useState } from "react";
 import { UserLocationContext } from "../components/context/Context";
 export default function Home() {
-  const [item, setItem] = useState("");
   const {
     state: { location },
   } = UserLocationContext();
-  setItem(location);
 
   return (
     <div className={styles.container}>
@@ -50,7 +48,7 @@ export default function Home() {
         </section>
 
         <section className={styles.componentWrapper}>
-          <Carousel location={item} />
+          <Carousel location={location} />
         </section>
 
         <section className={styles.componentWrapper}>
