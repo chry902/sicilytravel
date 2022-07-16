@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import Image from "next/image";
 import { useEffect } from "react";
-import { UserLocationContext } from "../components/context/Context";
+import { UserLocationContext } from "../context/Context";
 const items = [];
 
 const Gallery = () => {
