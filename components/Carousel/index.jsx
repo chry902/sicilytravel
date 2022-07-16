@@ -6,10 +6,12 @@ import AliceCarousel from "react-alice-carousel";
 import Link from "next/link";
 
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const items = [];
+
 const Gallery = ({ location }) => {
+  const [item, setItem] = useState(location);
   useEffect(() => {
     location.forEach((element, index) => {
       items.push(
@@ -28,7 +30,7 @@ const Gallery = ({ location }) => {
         </Link>
       );
     });
-  }, [location]);
+  }, [item]);
 
   const responsive = {
     0: { items: 1 },
