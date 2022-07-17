@@ -1,45 +1,44 @@
-@import "react-alice-carousel/lib/scss/alice-carousel.scss";
-
-.imgContainer{
-    width: 100%;
+@import "react-alice-carousel/lib/alice-carousel.css";
+// .imgContainer{
+//     width: 100%;
    
     
-    border-radius: 15px;
+//     border-radius: 15px;
     
-    div{
-        border-radius: 15px;
-        // box-shadow: 5px 10px 3px 1px rgba(196, 196, 196, 0.195);
-    }
+//     div{
+//         border-radius: 15px;
+//         // box-shadow: 5px 10px 3px 1px rgba(196, 196, 196, 0.195);
+//     }
     
-   li{
-    margin:0 2.5px;
-   }
+//    li{
+//     margin:0 2.5px;
+//    }
 
-        img{
-         border-radius: 15px;
-        //  margin:0 3px
-        }
+//         img{
+//          border-radius: 15px;
+//         //  margin:0 3px
+//         }
 
     
 
-}
-.alice-carousel__wrapper{
-    border-radius: 15px;
-}
+// }
+// .alice-carousel__wrapper{
+//     border-radius: 15px;
+// }
 
-@media screen and (max-width: 375px) {
-    .imgContainer{
-        width: 100%;
-       li{
-       margin: 0;
-       }
+// @media screen and (max-width: 375px) {
+//     .imgContainer{
+//         width: 100%;
+//        li{
+//        margin: 0;
+//        }
     
-            img{
-             border-radius: 15px;
+//             img{
+//              border-radius: 15px;
              
-            }
+//             }
     
         
     
-    }
-}
+//     }
+// }

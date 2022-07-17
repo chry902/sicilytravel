@@ -2,35 +2,12 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "./styles.module.scss";
 
 import AliceCarousel from "react-alice-carousel";
-import Link from "next/link";
-import Image from "next/image";
-import { useEffect } from "react";
+// import Link from "next/link";
+// import Image from "next/image";
+// import { useEffect } from "react";
 // import { UserLocationContext } from "../context/Context";
 
 const Gallery = ({ location }) => {
-  const handleDragStart = (e) => e.preventDefault();
-  const items = [];
-
-  useEffect(() => {
-    location.forEach((element, index) => {
-      items.push(
-        // <Link href={`/country/${element.city || ""}`}>
-        <div>
-          <Image
-            alt="location images"
-            src={element.image[0]}
-            onDragStart={handleDragStart}
-            role="presentation"
-            width={950}
-            height={760}
-            key={index}
-          />
-        </div>
-        //  </Link>
-      );
-    });
-  }, []);
-
   const responsive = {
     0: { items: 1 },
     376: { items: 2 },
@@ -39,6 +16,7 @@ const Gallery = ({ location }) => {
     1439: { items: 5 },
     2559: { items: 6 },
   };
+
   return (
     // <div className={styles.imgContainer}>
     <AliceCarousel
@@ -52,7 +30,7 @@ const Gallery = ({ location }) => {
       disableDotsControls={true}
       // autoHeight={true}
       // controlsStrategy="alternate"
-      items={items}
+      items={location}
     />
     // </div>
   );

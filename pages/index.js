@@ -1,4 +1,3 @@
-// import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import styles from "../styles/Home.module.scss";
 import "react-alice-carousel/lib/alice-carousel.css";
 import Head from "next/head";
@@ -12,11 +11,32 @@ import { useLocationContext } from "../components/context/Context";
 import { useEffect, useState } from "react";
 import Gallery from "../components/Carousel";
 
+const items = [];
 export default function Home() {
-  // const [items, setItems] = useState([]);
+  const [item, setItem] = useState(items);
   const {
     state: { location },
   } = useLocationContext();
+  const handleDragStart = (e) => e.preventDefault();
+  useEffect(() => {
+    location.forEach((element, index) => {
+      items.push(
+        // <Link href={`/country/${element.city || ""}`}>
+        <div>
+          <Image
+            alt="location images"
+            src={element.image[0]}
+            onDragStart={handleDragStart}
+            role="presentation"
+            width={950}
+            height={760}
+            key={index}
+          />
+        </div>
+        //  </Link>
+      );
+    });
+  }, [location]);
 
   return (
     <div className={styles.container}>
@@ -51,7 +71,7 @@ export default function Home() {
         </section>
 
         <section className={styles.componentWrapper}>
-          <Gallery location={location} />
+          <Gallery location={items} />
         </section>
 
         <section className={styles.componentWrapper}>
