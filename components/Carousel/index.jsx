@@ -3,7 +3,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { useEffect } from "react";
 
-// import Image from "next/image";
+import Image from "next/image";
 import { useLocationContext } from "../context/Context";
 
 const handleDragStart = (e) => e.preventDefault();
@@ -16,12 +16,14 @@ const Gallery = ({ state }) => {
     state?.forEach((item) => {
       items.push(
         <div className={styles.imgContainer}>
-          <img
+          <Image
             className={styles.carouselImg}
             alt="location images"
             src={item}
             onDragStart={handleDragStart}
             role="presentation"
+            width={700}
+            height={600}
           />
         </div>
       );
@@ -42,7 +44,7 @@ const Gallery = ({ state }) => {
       className={styles.imgContainer}
       mouseTracking={true}
       autoPlay={true}
-      autoPlayInterval={2000}
+      autoPlayInterval={2500}
       responsive={responsive}
       infinite={true}
       disableButtonsControls={true}
