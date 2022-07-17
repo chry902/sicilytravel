@@ -1,7 +1,7 @@
 import { createContext, useContext, useReducer } from "react";
-import axios from "axios";
-export const myContext = createContext("");
+// export const myContext = createContext("");
 import locationReducer from "./locationReducer";
+import axios from "axios";
 
 const initialState = {
   // loading: false,
@@ -746,7 +746,7 @@ const initialState = {
 console.log(initialState.location);
 const LocationContext = createContext(initialState);
 
-export const UserLocationContext = () => useContext(LocationContext);
+export const useLocationContext = () => useContext(LocationContext);
 
 const LocationContextDispatch = ({ children }) => {
   const [state, dispatch] = useReducer(locationReducer, initialState);

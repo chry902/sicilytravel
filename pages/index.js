@@ -4,15 +4,19 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import Head from "next/head";
 import Image from "next/image";
 import SicilyLogo from "../components/SicilyImg";
-import Carousel from "../components/Carousel";
+
 import LogoCitta from "../components/Cards/CardLogoCitta";
 import Map from "../components/BoxMap";
 import logoruota from "../components/Images/ruota.png";
-import { UserLocationContext } from "../components/context/Context";
+import { useLocationContext } from "../components/context/Context";
+import { useEffect, useState } from "react";
+import Gallery from "../components/Carousel";
+
 export default function Home() {
+  // const [items, setItems] = useState([]);
   const {
     state: { location },
-  } = UserLocationContext();
+  } = useLocationContext();
 
   return (
     <div className={styles.container}>
@@ -47,11 +51,11 @@ export default function Home() {
         </section>
 
         <section className={styles.componentWrapper}>
-          <Carousel location={location} />
+          <Gallery location={location} />
         </section>
 
         <section className={styles.componentWrapper}>
-          <LogoCitta />
+          <LogoCitta location={location} />
         </section>
 
         <section className={styles.componentWrapper}>

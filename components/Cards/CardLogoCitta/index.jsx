@@ -2,16 +2,7 @@ import styles from "./styles.module.scss";
 
 import Image from "next/image";
 
-import { UserLocationContext } from "../../context/Context";
-import { useEffect } from "react";
-
-const LogoCitta = () => {
-  const {
-    state: { location },
-  } = UserLocationContext();
-  console.log("location", location);
-  useEffect(() => {}, []);
-
+const LogoCitta = ({ location }) => {
   return (
     <div className={styles.logoContain}>
       <div>

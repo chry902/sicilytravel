@@ -14,19 +14,19 @@ const Gallery = ({ location }) => {
   useEffect(() => {
     location.forEach((element, index) => {
       items.push(
-        <>
-          <Link href={`/country/${element.city || ""}`}>
+        <Link href={`/country/${element.city || ""}`}>
+          <div>
             <Image
               alt="location images"
               src={element.image[0]}
               onDragStart={handleDragStart}
               role="presentation"
-              width={750}
-              height={560}
+              width={950}
+              height={760}
               key={index}
             />
-          </Link>
-        </>
+          </div>
+        </Link>
       );
     });
   }, []);
@@ -40,20 +40,21 @@ const Gallery = ({ location }) => {
     2559: { items: 6 },
   };
   return (
-    <div className={styles.imgContainer}>
-      <AliceCarousel
-        mouseTracking={true}
-        autoPlay={true}
-        autoPlayInterval={2000}
-        responsive={responsive}
-        infinite={true}
-        disableButtonsControls={true}
-        disableDotsControls={true}
-        // autoHeight={true}
-        // controlsStrategy="alternate"
-        items={items}
-      />
-    </div>
+    // <div className={styles.imgContainer}>
+    <AliceCarousel
+      className={styles.imgContainer}
+      mouseTracking={true}
+      autoPlay={true}
+      autoPlayInterval={2000}
+      responsive={responsive}
+      infinite={true}
+      disableButtonsControls={true}
+      disableDotsControls={true}
+      // autoHeight={true}
+      // controlsStrategy="alternate"
+      items={items}
+    />
+    // </div>
   );
 };
 export default Gallery;
