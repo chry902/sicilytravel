@@ -8,6 +8,7 @@ import { useEffect } from "react";
 // import { UserLocationContext } from "../context/Context";
 
 const Gallery = ({ location }) => {
+  const handleDragStart = (e) => e.preventDefault();
   const items = [];
 
   useEffect(() => {
@@ -38,7 +39,6 @@ const Gallery = ({ location }) => {
     1439: { items: 5 },
     2559: { items: 6 },
   };
-  const handleDragStart = (e) => e.preventDefault();
   return (
     <div className={styles.imgContainer}>
       <AliceCarousel
