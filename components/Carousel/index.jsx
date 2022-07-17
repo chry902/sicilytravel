@@ -5,19 +5,15 @@ import AliceCarousel from "react-alice-carousel";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
-import { UserLocationContext } from "../context/Context";
+// import { UserLocationContext } from "../context/Context";
 
-const Gallery = () => {
+const Gallery = ({ location }) => {
   const items = [];
-
-  const {
-    state: { location },
-  } = UserLocationContext();
 
   useEffect(() => {
     location.forEach((element, index) => {
       items.push(
-        <div>
+        <>
           <Link href={`/country/${element.city || ""}`}>
             <Image
               alt="location images"
@@ -29,7 +25,7 @@ const Gallery = () => {
               key={index}
             />
           </Link>
-        </div>
+        </>
       );
     });
   }, []);

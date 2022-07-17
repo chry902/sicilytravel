@@ -8,8 +8,12 @@ import Carousel from "../components/Carousel";
 import LogoCitta from "../components/Cards/CardLogoCitta";
 import Map from "../components/BoxMap";
 import logoruota from "../components/Images/ruota.png";
-
+import { UserLocationContext } from "../components/context/Context";
 export default function Home() {
+  const {
+    state: { location },
+  } = UserLocationContext();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -43,7 +47,7 @@ export default function Home() {
         </section>
 
         <section className={styles.componentWrapper}>
-          <Carousel />
+          <Carousel location={location} />
         </section>
 
         <section className={styles.componentWrapper}>
