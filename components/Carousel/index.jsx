@@ -9,14 +9,16 @@ import { UserLocationContext } from "../context/Context";
 
 const Gallery = () => {
   const items = [];
+
   const {
     state: { location },
   } = UserLocationContext();
+
   useEffect(() => {
     location.forEach((element, index) => {
       items.push(
-        <Link href={`/country/${element.city || ""}`}>
-          <div>
+        <div>
+          <Link href={`/country/${element.city || ""}`}>
             <Image
               alt="location images"
               src={element.image[0]}
@@ -26,11 +28,11 @@ const Gallery = () => {
               height={560}
               key={index}
             />
-          </div>
-        </Link>
+          </Link>
+        </div>
       );
     });
-  }, [location]);
+  }, []);
 
   const responsive = {
     0: { items: 1 },
