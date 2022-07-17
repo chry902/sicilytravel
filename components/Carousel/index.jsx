@@ -14,19 +14,19 @@ const Gallery = ({ location }) => {
   useEffect(() => {
     location.forEach((element, index) => {
       items.push(
-        <Link href={`/country/${element.city || ""}`}>
-          <div>
-            <Image
-              alt="location images"
-              src={element.image[0]}
-              onDragStart={handleDragStart}
-              role="presentation"
-              width={950}
-              height={760}
-              key={index}
-            />
-          </div>
-        </Link>
+        // <Link href={`/country/${element.city || ""}`}>
+        <div>
+          <Image
+            alt="location images"
+            src={element.image[0]}
+            onDragStart={handleDragStart}
+            role="presentation"
+            width={950}
+            height={760}
+            key={index}
+          />
+        </div>
+        //  </Link>
       );
     });
   }, []);
