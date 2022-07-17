@@ -11,33 +11,10 @@ import { useLocationContext } from "../components/context/Context";
 import { useEffect, useState } from "react";
 import Gallery from "../components/Carousel";
 
-const items = [];
 export default function Home() {
-  const [item, setItem] = useState(items);
   const {
     state: { location },
   } = useLocationContext();
-  const handleDragStart = (e) => e.preventDefault();
-  useEffect(() => {
-    location.forEach((element, index) => {
-      items.push(
-        // <Link href={`/country/${element.city || ""}`}>
-        <div>
-          <Image
-            alt="location images"
-            src={element.image[0]}
-            onDragStart={handleDragStart}
-            role="presentation"
-            width={950}
-            height={760}
-            key={index}
-          />
-        </div>
-        //  </Link>
-      );
-    });
-  }, [location]);
-
   return (
     <div className={styles.container}>
       <Head>
@@ -71,7 +48,7 @@ export default function Home() {
         </section>
 
         <section className={styles.componentWrapper}>
-          <Gallery location={item} />
+          <Gallery />
         </section>
 
         <section className={styles.componentWrapper}>
