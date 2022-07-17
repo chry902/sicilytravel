@@ -48,7 +48,7 @@ export default function Home() {
         </section>
 
         <section className={styles.componentWrapper}>
-          <Gallery />
+          <Gallery location={location} />
         </section>
 
         <section className={styles.componentWrapper}>

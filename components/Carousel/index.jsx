@@ -9,12 +9,9 @@ import { useLocationContext } from "../context/Context";
 const handleDragStart = (e) => e.preventDefault();
 const items = [];
 
-const Gallery = () => {
-  const {
-    state: { location },
-  } = useLocationContext();
+const Gallery = ({ location }) => {
   useEffect(() => {
-    location.forEach((element, index) => {
+    location?.forEach((element, index) => {
       items.push(
         <Link href={`/country/${element.city || ""}`}>
           <div className={styles.imgContainer}>
@@ -42,7 +39,6 @@ const Gallery = () => {
   };
 
   return (
-    // <div className={styles.imgContainer}>
     <AliceCarousel
       className={styles.imgContainer}
       mouseTracking={true}
@@ -57,7 +53,6 @@ const Gallery = () => {
       // controlsStrategy="alternate"
       items={items}
     />
-    // </div>
   );
 };
 export default Gallery;
