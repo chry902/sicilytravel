@@ -15,6 +15,21 @@ export default function Home() {
   const {
     state: { location },
   } = useLocationContext();
+  const [state, setState] = useState([]);
+  console.log("location", location[0].image);
+
+  useEffect(() => {
+    let arrImg = [];
+    arrImg = [
+      ...arrImg,
+      ...location[0].image,
+      ...location[1].image,
+      ...location[2].image,
+    ];
+    setState(arrImg);
+  }, [location]);
+
+  console.log("state", state);
   return (
     <div className={styles.container}>
       <Head>
@@ -48,7 +63,7 @@ export default function Home() {
         </section>
 
         <section className={styles.componentWrapper}>
-          <Gallery location={location} />
+          <Gallery state={state} />
         </section>
 
         <section className={styles.componentWrapper}>
