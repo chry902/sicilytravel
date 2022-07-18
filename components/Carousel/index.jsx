@@ -4,14 +4,11 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import { useEffect } from "react";
 
 import Image from "next/image";
-import { useLocationContext } from "../context/Context";
 
 const handleDragStart = (e) => e.preventDefault();
 const items = [];
 
 const Gallery = ({ state }) => {
-  console.log("props", state);
-
   useEffect(() => {
     state?.forEach((item) => {
       items.push(

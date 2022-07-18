@@ -7,6 +7,7 @@ import SicilyLogo from "../components/SicilyImg";
 import LogoCitta from "../components/Cards/CardLogoCitta";
 import Map from "../components/BoxMap";
 import logoruota from "../components/Images/ruota.png";
+
 import { useLocationContext } from "../components/context/Context";
 import { useEffect, useState } from "react";
 import Gallery from "../components/Carousel";
@@ -16,7 +17,6 @@ export default function Home() {
     state: { location },
   } = useLocationContext();
   const [state, setState] = useState([]);
-  console.log("location", location[0].image);
 
   useEffect(() => {
     let arrImg = [];
@@ -29,7 +29,6 @@ export default function Home() {
     setState(arrImg);
   }, [location]);
 
-  console.log("state", state);
   return (
     <div className={styles.container}>
       <Head>
