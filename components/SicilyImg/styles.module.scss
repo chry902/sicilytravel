@@ -7,6 +7,12 @@
     align-items: center;
     flex-direction: column;
     // background-color: rgb(224, 224, 224);
+    .titleContainer{
+        h2{
+            color: rgb(215,143,26);
+            margin-bottom: 3rem;
+        }
+    }
     .paragraphContaine{
         width: 100%;
         height: auto;

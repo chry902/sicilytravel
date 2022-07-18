@@ -1,11 +1,13 @@
 import styles from "./styles.module.scss";
 import SicilyImg from "../Images/sicilyImg.png";
 import Image from "next/image";
-import Link from "next/link";
 
 const SicilyLogo = () => {
   return (
     <div className={styles.sicilyContainer}>
+      <div className={styles.titleContainer}>
+        <h2>Sicilia</h2>
+      </div>
       <div className={styles.paragraphContaine}>
         <p>
           Suli a livanti, suli a punenti, <br /> terra vasata di tutti li venti,
@@ -44,13 +46,9 @@ const SicilyLogo = () => {
           <br /> ma sulu a Sicilia é sta gran meravigghia!
         </p>
       </div>
+
       <div className={styles.imgContain}>
-        <Link href="/country">
-          <a>
-            <h2>Clicca sulla sicilia per andare alle città </h2>
-            <Image src={SicilyImg} alt="immagine sicilia" />
-          </a>
-        </Link>
+        <Image src={SicilyImg} alt="immagine sicilia" />
       </div>
     </div>
   );
