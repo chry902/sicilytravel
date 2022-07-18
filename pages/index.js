@@ -11,6 +11,7 @@ import logoruota from "../components/Images/ruota.png";
 import { useLocationContext } from "../components/context/Context";
 import { useEffect, useState } from "react";
 import Gallery from "../components/Carousel";
+import CardCity from "../components/Cards/CardCity";
 
 export default function Home() {
   const {

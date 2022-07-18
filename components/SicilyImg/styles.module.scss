@@ -21,6 +21,7 @@
         align-items:flex-end;
         flex-wrap: wrap;
         background-repeat: no-repeat;
+        margin-bottom: 4rem;
         p{
             white-space: nowrap;
             font-family: 'El Messiri', sans-serif;
@@ -29,8 +30,25 @@
         }
 
     }
+    a{
+        width: 100%;
+        text-align: center;
+        .button{
+            all: unset;
+            margin:auto;
+            text-align: center;
+            width: 50%;
+            min-height: 50px;
+            border-radius: 15px;
+            border:solid 2px rgb(250, 163, 64);
+            color: rgb(250, 163, 64);
+            font-size: 100%;
+            
+        }
+
+    }
     .imgContain{
-        margin-top:5rem ;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -41,6 +59,7 @@
             font-size:larger;
             text-align: center;
         }
+        
     
     }
 }
@@ -57,6 +76,10 @@
                 font-size:inherit;
             }
         }
+        .button{
+            // font-size: 20px;
+        }
+
 
     }
 }
@@ -70,6 +93,9 @@
                 width: 100%;
                 
             }
+        }
+        .button{
+            // font-size: 15px;
         }
 
     }

@@ -9,8 +9,8 @@
         main{
             background-color: rgb(255, 255, 255);
             border-radius: 15px;
+            
             .header{
-               
                 padding-top: 3rem;
                 background-color: white;
                 border-radius: 15px;
@@ -27,20 +27,17 @@
   
                         background-image: url("../components/Images/sfondoH1.jpeg"); 
                     }
-    
+                    
                 }
-            .componentWrapper{
-                display: flex;
-                justify-content: center;
-                margin-bottom: 3rem ;
-                padding: 1rem;
+                .componentWrapper{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-bottom: 3rem ;
+                    padding: 1rem;
+                    
             }
-            
-    
-            :nth-child(3){
-                justify-content: space-between;
-            }
-            
+           
         }
     
 }
