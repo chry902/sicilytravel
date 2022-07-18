@@ -46,12 +46,12 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .logoContain{
-      animation: logoContain-spin infinite 20s linear;
+    .logoRuota{
+      animation: logoRuota-spin infinite 20s linear;
     }
   }
 
-  @keyframes logoContain-spin
+  @keyframes logoRuota-spin
    {
     from {
       transform: rotate(0deg);

@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
+// import "react-alice-carousel/lib/alice-carousel.css";
 import { useEffect } from "react";
 
 import Image from "next/image";
@@ -20,7 +20,7 @@ const Gallery = ({ state }) => {
             onDragStart={handleDragStart}
             role="presentation"
             width={700}
-            height={600}
+            height={550}
           />
         </div>
       );
@@ -48,7 +48,7 @@ const Gallery = ({ state }) => {
       disableDotsControls={true}
       // autoWidth={true}
       // autoHeight={true}
-      // controlsStrategy="alternate"
+      controlsStrategy="alternate"
       items={items}
     />
   );

@@ -48,7 +48,7 @@ export default function Home() {
           </div>
           <div className={styles.logoContain}>
             <Image
-              // layout="fill"
+              className={styles.logoRuota}
               src={logoruota}
               alt="logo ruota carro"
               width={500}

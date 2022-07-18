@@ -1,13 +1,11 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
 
 .imgContainer{
-    
-   
-    margin:0 10px;
+    // width: 100px;
+    // height: 100px;
+    margin: 0 10px;
     .carouselImg{
-        object-fit:cover;
         width: 100%;
-        height:100%;
         border-radius: 15px;
     }
 }
