@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 import SicilyImg from "../Images/sicilyImg.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const SicilyLogo = () => {
   return (
@@ -44,7 +45,12 @@ const SicilyLogo = () => {
         </p>
       </div>
       <div className={styles.imgContain}>
-        <Image src={SicilyImg} alt="immagine sicilia" />
+        <h2>Clicca sulla sicilia per andare alle città </h2>
+        <Link href="/country">
+          <a>
+            <Image src={SicilyImg} alt="immagine sicilia" />
+          </a>
+        </Link>
       </div>
     </div>
   );
