@@ -45,9 +45,9 @@ const SicilyLogo = () => {
         </p>
       </div>
       <div className={styles.imgContain}>
-        <h2>Clicca sulla sicilia per andare alle città </h2>
         <Link href="/country">
           <a>
+            <h2>Clicca sulla sicilia per andare alle città </h2>
             <Image src={SicilyImg} alt="immagine sicilia" />
           </a>
         </Link>

@@ -56,13 +56,12 @@ export default function Home() {
             />
           </div>
         </div>
-
         <section className={styles.componentWrapper}>
-          <SicilyLogo />
+          <Gallery state={state} />
         </section>
 
         <section className={styles.componentWrapper}>
-          <Gallery state={state} />
+          <SicilyLogo />
         </section>
 
         <section className={styles.componentWrapper}>

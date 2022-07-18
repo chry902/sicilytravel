@@ -1,3 +1,6 @@
-export default function Country() {
-  return <h1>ciao</h1>;
+import styles from "./styles.module.scss";
+
+function Country() {
+  return <div className={styles.container}></div>;
 }
+export default Country;
