@@ -11,7 +11,6 @@ import logoruota from "../components/Images/ruota.png";
 import { useLocationContext } from "../components/context/Context";
 import { useEffect, useState } from "react";
 import Gallery from "../components/Carousel";
-import CardCity from "../components/Cards/CardCity";
 
 export default function Home() {
   const {
@@ -43,10 +42,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className={styles.header}>
+        <section className={styles.header}>
           <div className={styles.titleContanere}>
             <h1 className={styles.title}>Gira, vota e furria</h1>
           </div>
+
           <div className={styles.logoContain}>
             <Image
               className={styles.logoRuota}
@@ -56,7 +56,8 @@ export default function Home() {
               height={500}
             />
           </div>
-        </div>
+        </section>
+
         <section className={styles.componentWrapper}>
           <Gallery state={state} />
         </section>

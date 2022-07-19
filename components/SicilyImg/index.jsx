@@ -32,6 +32,7 @@ const SicilyLogo = () => {
           prima di lassari lu só postu a la luna, <br />e putilla ammirari é na
           gran furtuna.
         </p>
+        <div></div>
 
         <p>
           Terra di genti chi la lassa scuntenti,

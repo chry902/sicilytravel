@@ -1,10 +1,11 @@
 import styles from "./styles.module.scss";
 import Link from "next/link";
 
-const CardCity = () => {
-  const name = "ciao";
-  const image = "";
+const CardCity = ({ item }) => {
+  const name = item.city || "ciao";
+  const image = item.image[0] || "";
   const descript =
+    item.description ||
     "In Sicilia l’abbiocco in spiaggia ha il gusto di cannoli e arancin* e!";
   return (
     <div className={styles.cardLargeContainer}>
