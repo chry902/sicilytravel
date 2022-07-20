@@ -1,0 +1,47 @@
+.inputContainer{
+    background-color: white;
+    min-width: 100%;
+    border-radius: 15px;
+    z-index: 300;
+    position: sticky;
+    top: 20px;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    .h2Contain{
+        width: 40%;
+        .h2Title{
+            width: 100%;
+            
+            white-space: nowrap;
+        }
+    }
+    div{
+        width: 40%;
+        .formContainer{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .h2Contain{
+        h2{
+            font-size:40px;
+        }
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .h2Contain{
+        h2{
+            font-size: 30px;
+        }
+    }
+    
+}
