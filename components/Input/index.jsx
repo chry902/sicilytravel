@@ -13,7 +13,7 @@ const Input = ({ search, setSearch, category, setCategory }) => {
             className={styles.input}
             type="text"
             id="search"
-            placeholder="Search,Citta"
+            placeholder="Nome città/Mare,Montagna"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />

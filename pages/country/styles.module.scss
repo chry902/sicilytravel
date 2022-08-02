@@ -2,10 +2,8 @@
     width: 100vw;
     height: 100vh;
     padding:0 10rem;
-   
-   
     background-image: url(../../components/Images/imageBackground.jpeg);
-    
+    overflow-y: auto;
 }
 
 
@@ -41,14 +39,7 @@
     }
     
 }
-@media screen and (max-width: 575px) {
-    .container{
-         
-         
-       
-    }
-    
-}
+
 
 @media screen and (max-width: 425px) {
     .container{
