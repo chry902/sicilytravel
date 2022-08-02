@@ -10,6 +10,7 @@ const Input = ({ search, setSearch, category, setCategory }) => {
       <div>
         <form className={styles.formContainer}>
           <input
+            className={styles.input}
             type="text"
             id="search"
             placeholder="Search,Citta"

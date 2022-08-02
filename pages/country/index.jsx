@@ -10,7 +10,6 @@ function Country() {
 
   const [category, setCategory] = useState("");
   const [search, setSearch] = useState("");
-  console.log("search", category);
 
   const {
     state: { location },
@@ -18,7 +17,7 @@ function Country() {
   useEffect(() => {
     setState(location);
   }, []);
-  console.log("country", state);
+  console.log("country", location);
   return (
     <div className={styles.container}>
       <Input
