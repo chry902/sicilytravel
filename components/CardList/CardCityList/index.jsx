@@ -6,7 +6,10 @@ const CardCityList = ({ state, search }) => {
     <div className={styles.cardContainer}>
       {state
         ?.filter((item) =>
-          item.city?.toLowerCase().trim().includes(search.toLowerCase().trim())
+          item.city
+            ?.toLowerCase()
+            ?.trim()
+            ?.includes(search.toLowerCase().trim())
         )
         .map((item) => (
           <CardCity className={styles.CardCity} key={item.id} item={item} />
