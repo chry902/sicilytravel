@@ -9,7 +9,7 @@ const CardCity = ({ item }) => {
     "In Sicilia l’abbiocco in spiaggia ha il gusto di cannoli e arancin* e!";
   return (
     <div className={styles.cardLargeContainer}>
-      <div className={styles.imgContainer}>
+      <div className={styles.imgWrapper}>
         <img src={image} alt="ciao" className={styles.img} />
       </div>
 

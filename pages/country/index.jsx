@@ -20,18 +20,21 @@ function Country() {
   console.log("country", location);
   return (
     <div className={styles.container}>
-      <Input
-        search={search}
-        setSearch={setSearch}
-        category={category}
-        setCategory={setCategory}
-      />
-      <CardCityList
-        state={state}
-        search={search}
-        category={category}
-        setCategory={setCategory}
-      />
+      <div>
+        <Input
+          search={search}
+          setSearch={setSearch}
+          category={category}
+          setCategory={setCategory}
+        />
+
+        <CardCityList
+          state={state}
+          search={search}
+          category={category}
+          setCategory={setCategory}
+        />
+      </div>
     </div>
   );
 }

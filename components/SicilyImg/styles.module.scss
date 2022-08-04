@@ -17,13 +17,14 @@
         width: 100%;
         height: auto;
         display: flex;
-        justify-content: space-evenly;
-        align-items:flex-end;
+        justify-content: center;
+        // align-items:flex-end;
+        gap: 2rem;
         flex-wrap: wrap;
-        background-repeat: no-repeat;
+        
         margin-bottom: 4rem;
         p{
-            white-space: nowrap;
+            
             font-family: 'El Messiri', sans-serif;
             text-align: center;
 
@@ -95,9 +96,7 @@
                 
             }
         }
-        .button{
-            // font-size: 15px;
-        }
+       
 
     }
 }

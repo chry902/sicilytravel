@@ -4,6 +4,14 @@
     padding:0 10rem;
     background-image: url(../../components/Images/imageBackground.jpeg);
     overflow-y: auto;
+    gap: 50px;
+    
+    div{
+        width: 100%;
+        background-color: white;
+        
+        border-radius: 15px;
+    }
 }
 
 
