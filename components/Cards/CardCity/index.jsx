@@ -7,6 +7,9 @@ const CardCity = ({ item }) => {
   const descript =
     item.description ||
     "In Sicilia l’abbiocco in spiaggia ha il gusto di cannoli e arancin* e!";
+
+  const formatMinText = (descript) =>
+    descript.split("").slice(0, 550).join("") + "...";
   return (
     <div className={styles.cardLargeContainer}>
       <div className={styles.imgWrapper}>
@@ -16,7 +19,7 @@ const CardCity = ({ item }) => {
       <div className={styles.descriptionContainer}>
         <h2 className={styles.h2Title}>{name}</h2>
 
-        <p className={styles.paragraph}>{descript}</p>
+        <p className={styles.paragraph}>{formatMinText(descript)}</p>
 
         <Link href={`/country/city/${name}`}>
           <a className={styles.btn}>Più su {name}</a>
