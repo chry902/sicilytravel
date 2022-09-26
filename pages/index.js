@@ -6,6 +6,7 @@ import SicilyLogo from "../components/SicilyImg";
 
 import LogoCitta from "../components/Cards/CardLogoCitta";
 import Map from "../components/BoxMap";
+
 import logoruota from "../components/Images/ruota.png";
 
 import { useLocationContext } from "../components/context/Context";
@@ -71,9 +72,11 @@ export default function Home() {
         </section>
 
         <section className={styles.componentWrapper}>
-          <Map lng={14.262851} lat={37.5099321} zoom={6.6} />
+          <div>
+            <Map lng={14.262851} lat={37.5099321} zoom={6.6} />
+          </div>
         </section>
       </main>
     </div>
-  )
+  );
 }
