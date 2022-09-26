@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import CardCityList from "../../components/CardList/CardCityList";
+import CardEventList from "../../components/CardList/CardEventList";
 import { useLocationContext } from "../../components/context/Context";
 import Input from "../../components/Input";
 
@@ -20,7 +21,7 @@ function Country() {
   console.log("country", location);
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.wrapper}>
         <Input
           search={search}
           setSearch={setSearch}
@@ -34,6 +35,8 @@ function Country() {
           category={category}
           setCategory={setCategory}
         />
+
+        <CardEventList location={location} />
       </div>
     </div>
   );

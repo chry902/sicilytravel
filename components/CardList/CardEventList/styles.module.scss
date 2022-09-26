@@ -1,0 +1,19 @@
+.cardContiner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 4rem 10%;
+  }
+  
+  @media screen and (max-width: 920px) {
+    .cardContiner {
+      padding: 5%;
+    }
+  }
+  @media screen and (max-width: 680px) {
+    .cardContiner {
+      padding: 7%;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

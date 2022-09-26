@@ -1,18 +1,7 @@
 import styles from "./styles.module.scss";
 import CardCity from "../../Cards/CardCity";
-import { useEffect, useState } from "react";
 
 const CardCityList = ({ state, search }) => {
-  const [cat, useCat] = useState([]);
-
-  console.log("statefilter", state);
-  console.log("search", search);
-
-  // useEffect(() => {
-  //   useCat(state[0]?.categorie, state[1]?.categorie);
-  // }, []);
-
-  console.log("cat", cat);
   return (
     <div className={styles.cardContainer}>
       {state

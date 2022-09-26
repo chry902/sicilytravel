@@ -25,6 +25,7 @@ const Gallery = ({ state }) => {
         </div>
       );
     });
+    console.log("items::", items);
   }, [state]);
 
   const responsive = {
@@ -35,7 +36,6 @@ const Gallery = ({ state }) => {
     1439: { items: 5 },
     2559: { items: 6 },
   };
-
   return (
     <AliceCarousel
       className={styles.imgContainer}
