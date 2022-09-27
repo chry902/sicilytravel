@@ -19,11 +19,16 @@ const CardEventList = ({ location }) => {
   }, [location]);
 
   return (
-    <div className={styles.cardContiner}>
-      {eventi?.map((item, index) => (
-        <EventCard item={item} key={index} />
-      ))}
-    </div>
+    <>
+      <h2 className={styles.titleCard}>
+        che si fa?... dai un occhiata qua sotto!!{" "}
+      </h2>
+      <div className={styles.cardContiner}>
+        {eventi?.map((item, index) => (
+          <EventCard item={item} key={index} />
+        ))}
+      </div>
+    </>
   );
 };
 export default CardEventList;

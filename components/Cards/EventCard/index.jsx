@@ -16,11 +16,11 @@ const EventCard = ({ item }) => {
         <h2>{name}</h2>
         <p>{data}</p>
         <p>{luogo}</p>
-        <p>
+        {/* <p>
           <a>link tiket</a>
-        </p>
+        </p> */}
 
-        <a className={styles.btn}>Scopri viaggi</a>
+        {/* <a className={styles.btn}>Scopri viaggi</a> */}
       </div>
     </div>
   );

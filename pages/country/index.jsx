@@ -30,6 +30,7 @@ function Country() {
         />
 
         <CardCityList
+          className={styles.CardCityList}
           state={state}
           search={search}
           category={category}
